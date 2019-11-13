@@ -1,0 +1,15 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          sts:
+            clientId: 5014057553-8gm9um6vnli3cle5rgigcdjpdrid14m9.apps.googleusercontent.com
+            clientSecret: tWZKVLxaD_ARWsriiiUFYoIk
+            redirectUriTemplate: "{baseUrl}/oauth2/callback/{registrationId}"
+            scope: openid
+            authorizationGrantType: code
+        provider:
+          sts:
+            authorizationUri: http://localhost/teste
+            tokenUri: http://localhost/teste
